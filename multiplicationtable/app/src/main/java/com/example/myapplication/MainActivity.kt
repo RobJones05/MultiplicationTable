@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
             //created variable to hold the switch between pages
             val intent = Intent(this, Table::class.java)
             //when this is called, current page is closed and the table page is opened
+            intent.putExtra("tableNumber", numInput.text.toString())
             startActivity(intent)
         }
 
