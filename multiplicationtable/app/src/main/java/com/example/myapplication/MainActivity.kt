@@ -16,9 +16,13 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
+        //added variable to hold multiplication button
         val multiplyBtn = findViewById<Button>(R.id.multButton)
+        //added listener for button
         multiplyBtn.setOnClickListener {
+            //created variable to hold the switch between pages
             val intent = Intent(this, Table::class.java)
+            //when this is called, current page is closed and the table page is opened
             startActivity(intent)
         }
 
