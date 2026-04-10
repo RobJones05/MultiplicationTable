@@ -17,13 +17,21 @@ class MultiplicationTable : AppCompatActivity() {
         val bundle: Bundle? = intent.extras
         val tableString: String? = bundle?.getString("tableNumber")
         val tableNumber = tableString!!.toInt()
+
+        // Convert received string to integer
         val multiplyTbl = findViewById<TextView>(R.id.multiplyTableText)
+
+        // Start output string
         var tableDisplay = "$tableNumber times table\n\n"
+
+        // Counter for loop
         var count = 1
+
+        // Calculate answer
         val answer = tableNumber * count
         multiplyTbl.text = tableDisplay
 
-        while (count <= 10) {
+        while (count <= 20) {
 
             val answer = tableNumber * count
 
@@ -33,8 +41,6 @@ class MultiplicationTable : AppCompatActivity() {
 
         }
 
-        tableDisplay += "*$tableDisplay x $count = $answer\n"
-        count++
 
 
 
