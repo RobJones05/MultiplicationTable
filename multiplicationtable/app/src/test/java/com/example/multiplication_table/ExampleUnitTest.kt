@@ -1,4 +1,4 @@
-package com.example.myapplication
+package com.example.multiplication_table
 
 import org.junit.Test
 

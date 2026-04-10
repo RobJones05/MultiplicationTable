@@ -8,27 +8,12 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="219dp"
-        android:layout_height="30dp"
-        android:text="Multiply Table"
-        tools:layout_editor_absoluteX="87dp"
-        tools:layout_editor_absoluteY="97dp" />
-
-    <EditText
-        android:id="@+id/numInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="number"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="305dp" />
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/multButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Multiply"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="477dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
